@@ -1,0 +1,38 @@
+! RainbowCSV for NEdit
+!
+! Adapted from the (much more feature-reach) Vim plugin of the same name,
+! which is available at https://github.com/mechatroner/rainbow_csv
+!
+! by Dmitry Babin
+! 
+! Changelog:
+! ^^^^^^^^^
+!
+!   2018-11-20:
+!     Initial version
+
+nedit.highlightPatterns: \
+	CSV:1:0{\n\
+		Top:"((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?((?:""(?:[^""]*"""")*[^""]*"",)|(?:""(?:[^""]*"""")*[^""]*""$)|(?:[^,]*,)|(?:[^,]+$))?":::Plain::\n\
+		RainbowCSV_col01:"\\1":""::RainbowCSV_col01:Top:C\n\
+		RainbowCSV_col02:"\\2":""::RainbowCSV_col02:Top:C\n\
+		RainbowCSV_col03:"\\3":""::RainbowCSV_col03:Top:C\n\
+		RainbowCSV_col04:"\\4":""::RainbowCSV_col04:Top:C\n\
+		RainbowCSV_col05:"\\5":""::RainbowCSV_col05:Top:C\n\
+		RainbowCSV_col06:"\\6":""::RainbowCSV_col06:Top:C\n\
+		RainbowCSV_col07:"\\7":""::RainbowCSV_col07:Top:C\n\
+		RainbowCSV_col08:"\\8":""::RainbowCSV_col08:Top:C\n\
+		RainbowCSV_col09:"\\9":""::RainbowCSV_col09:Top:C\n\
+	}
+nedit.languageModes: \
+		CSV:.csv:::::::
+nedit.styles: \
+	RainbowCSV_col01:red:Plain\n\
+	RainbowCSV_col02:blue:Plain\n\
+	RainbowCSV_col03:green:Plain\n\
+	RainbowCSV_col04:magenta:Plain\n\
+	RainbowCSV_col05:darkcyan:Plain\n\
+	RainbowCSV_col06:darkred:Plain\n\
+	RainbowCSV_col07:darkblue:Plain\n\
+	RainbowCSV_col08:darkgreen:Plain\n\
+	RainbowCSV_col09:darkmagenta:Plain
