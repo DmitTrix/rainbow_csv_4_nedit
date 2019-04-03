@@ -1,4 +1,4 @@
-# rainbow_csv_4_nedit
+# RainbowCSV for NEdit
 Use NEdit’s syntax highlighting to color columns in CSV (Comma-Separated Values) files. Adapted from the (much more feature-reach) Vim plugin [rainbow_csv](https://github.com/mechatroner/rainbow_csv).
 
 ## Installation
